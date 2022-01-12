@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+* ::-webkit-scrollbar {
+  width: 5px;
+}
+* ::-webkit-scrollbar-track {
+  background: #3351d8;
+}
+* ::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(65, 38, 171, 0.9);
+  color: white;
+}
+
+.fa-pencil {
+  color: #423905;
+}
+
+.fa-trash-alt {
+  color: #4e034e;
+}
+
+.fa-sign-in-alt {
+  color: #1c361c;
+}
+
+header {
+  height: 80px;
+  background-color: rgba(65, 38, 171, 0.9);
+  color: white;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.438);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header button {
+  color: #fff !important;
+}
+header button span {
+  color: white;
+}
+header button i {
+  color: white;
+}
+header #menu,
+header .headerSections {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+header #menu img,
+header .headerSections img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #fff;
+}
+
+#users {
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+#users option {
+  padding: 10px;
+  color: black;
+}
+
+#anotherList {
+  background: rgba(203, 195, 206, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  width: 300px;
+  padding: 10px;
+}
+#anotherList input {
+  margin-left: 10px;
+  background: transparent !important;
+  border: none;
+  outline: none !important;
+}
+#anotherList input::placeholder {
+  color: #fff;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+#signupForm input,
+#signInForm input {
+  display: block;
+  width: 100%;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #6e0b59;
+  color: #fff;
+}
+#signupForm input::placeholder,
+#signInForm input::placeholder {
+  color: rgba(255, 255, 255, 0.445);
+}
+
+#signContainer {
+  width: 500px;
+  height: 100vh;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#groups {
+  background-color: rgba(49, 29, 129, 0.9);
+  color: white;
+  transition: 1s all;
+  min-width: 300px;
+  min-height: 100vh;
+  min-width: 250px;
+}
+#groups ul {
+  margin: 0;
+  padding: 0;
+}
+#groups li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#groups li button {
+  color: #fff;
+}
+#groups #newGroup {
+  background-color: blanchedalmond;
+  background: rgba(203, 195, 206, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(66, 65, 65, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#groups #newGroup i {
+  color: white;
+}
+#groups #newGroup ul li {
+  background-color: rgba(33, 19, 88, 0.9);
+}
+#groups #newGroup input {
+  width: 100%;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  color: white;
+}
+#groups #newGroup input::placeholder {
+  color: #fff;
+}
+
+#members {
+  background-color: rgba(49, 29, 129, 0.9);
+  width: 300px;
+  min-height: 100vh;
+}
+
+#chatbody {
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+#addForm {
+  display: flex;
+  width: 100%;
+}
+#addForm input {
+  background-color: #001C40 !important;
+  outline: none !important;
+  border: 0 !important;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: white !important;
+  border-radius: 10px !important;
+}
+
+form {
+  gap: 20px;
+  border-radius: 10px;
+}
+
+li {
+  display: flex;
+  background-color: #00346E;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+
+.chatRight {
+  flex-direction: row-reverse;
+}
+
+.btn {
+  background-color: #001C40;
+  color: white;
+  font-size: 18px;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+
+.btn:active {
+  transform: scale(1.2);
+}
+
+.profile-cover {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=main.css.map */
